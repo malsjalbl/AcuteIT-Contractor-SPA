@@ -1,3 +1,4 @@
+/* global angular */
 
 // App imports
 import {AppController}  from './app-controller';
