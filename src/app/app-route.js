@@ -5,5 +5,5 @@ export function appRouteConfig($urlRouterProvider) {
 
   'ngInject';
 
-  $urlRouterProvider.otherwise('/home');
+  //$urlRouterProvider.otherwise('/home');
 }

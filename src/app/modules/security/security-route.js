@@ -1,24 +1,16 @@
 /**
  * Created by mike on 05/11/2015.
  */
-export function securityRouteConfig ($routeProvider) {
+export function securityRouteConfig ($stateProvider) {
 
   'ngInject';
 
-  $routeProvider
+  $stateProvider
 
-    .when('/manufacturers', {
+    .state('login', {
 
-      templateUrl:  'app/modules/manufacturer/manufacturer.html',
-      controller:   'ManufacturerList',
-      controllerAs: 'manufacturer-list'
-    })
-
-    .when('/manufacturers/:manufacturerId', {
-
-      templateUrl: 'static/app/contract/contract-detail-view.html',
-      controller:  'contractDetailController',
-      controllerAs: 'manufacturer-detail'
-
+      url:'/login',
+      templateUrl: 'app/modules/security/login.html',
+      controller: 'LoginController as loginCtrl'
     })
 }
